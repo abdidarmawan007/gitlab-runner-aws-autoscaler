@@ -1,0 +1,44 @@
+concurrent = 10
+check_interval = 0
+
+[session_server]
+  session_timeout = 1800
+
+[[runners]]
+  name = "gitlab-aws-autoscaler"
+  url = "https://gitlab.com/"
+  token = "xxxxxx"
+  executor = "docker+machine"
+  limit = 20
+  [runners.custom_build_dir]
+  [runners.docker]
+    tls_verify = false
+    image = "node:10-alpine"
+    privileged = true
+    disable_cache = true
+  [runners.cache]
+    [runners.cache.s3]
+[runners.machine]
+    IdleCount = 0
+    IdleTime = 60
+    MaxBuilds = 35
+    OffPeakIdleCount = 0
+    OffPeakIdleTime = 30
+    MachineDriver = "amazonec2"
+    MachineName = "gitlab-docker-machine-%s"
+    MachineOptions = [
+      "amazonec2-access-key=xxxxxx",
+      "amazonec2-secret-key=xxxxxx",
+      "amazonec2-region=ap-southeast-1",
+      "amazonec2-zone=b",
+      "amazonec2-vpc-id=vpc-xxxxxx",
+      "amazonec2-subnet-id=subnet-xxxxxx",
+      "amazonec2-use-private-address=true",
+      "amazonec2-tags=runner-manager-name,gitlab-aws-autoscaler,gitlab,true,gitlab-runner-autoscale,true",
+      "amazonec2-security-group=gitlab-runner",
+      "amazonec2-ami=ami-061eb2b23f9f8839c",
+      "amazonec2-instance-type=c5.xlarge",
+      "amazonec2-root-size=10",
+      "amazonec2-request-spot-instance=true",
+      "amazonec2-spot-price=0.09"
+    ]
