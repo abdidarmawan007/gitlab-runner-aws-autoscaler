@@ -1,1 +1,1 @@
-# gitlab runner aws autoscaler with ec2 spotinstance
+# gitlab runner aws autoscaler with ec2 spot instance
