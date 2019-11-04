@@ -37,6 +37,7 @@ check_interval = 0
       "amazonec2-tags=runner-manager-name,gitlab-aws-autoscaler,gitlab,true,gitlab-runner-autoscale,true",
       "amazonec2-security-group=gitlab-runner",
       "amazonec2-ami=ami-061eb2b23f9f8839c",
+      "amazonec2-iam-instance-profile=gitlab-runner-agent",
       "amazonec2-instance-type=c5.xlarge",
       "amazonec2-root-size=10",
       "amazonec2-request-spot-instance=true",
