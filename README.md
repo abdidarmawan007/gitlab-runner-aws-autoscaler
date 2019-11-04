@@ -34,6 +34,9 @@ ec2 gitlat runner manager only can delete EC2 with ec2 profile `gitlab-runner-ag
 #### MachineOptions for AWS
 https://docs.docker.com/machine/drivers/aws/
 
+#### MachineOption for GCE
+https://docs.docker.com/machine/drivers/gce/
+https://verkoyen.eu/blog/2018/08/scaling-gitlab-runner-on-google-cloud-platform
 
 
         
