@@ -36,6 +36,7 @@ https://docs.docker.com/machine/drivers/aws/
 
 #### MachineOption for GCE
 https://docs.docker.com/machine/drivers/gce/
+##### example for gce with preemptible
 https://verkoyen.eu/blog/2018/08/scaling-gitlab-runner-on-google-cloud-platform
 
 
