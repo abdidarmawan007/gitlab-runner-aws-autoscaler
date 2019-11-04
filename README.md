@@ -6,7 +6,7 @@
 ![alt text](https://i.imgur.com/o6OVzk9.png)
 
 
-for iam-policy
+#### iam-policy
 ec2 gitlat runner manager only can delete EC2 with ec2 profile `gitlab-runner-agent`
  ```
  {
@@ -22,4 +22,18 @@ ec2 gitlat runner manager only can delete EC2 with ec2 profile `gitlab-runner-ag
             }
         },
 ```        
+
+#### One Gitlab runner use by multiple project
+##### Disable lock runner in primary project
+![alt text](https://i.imgur.com/uSfcfKk.png)
+##### in other project enable runner in aws
+![alt text](https://i.imgur.com/PO17CTY.png)
+
+
+
+#### MachineOptions for AWS
+https://docs.docker.com/machine/drivers/aws/
+
+
+
         
