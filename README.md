@@ -8,7 +8,8 @@
 
 for iam-policy
 ec2 gitlat runner manager only can delete EC2 with ec2 profile gitlab-runner-agent
- ```{
+ ```
+ {
             "Action": [
                 "ec2:TerminateInstances"
             ],
@@ -20,4 +21,5 @@ ec2 gitlat runner manager only can delete EC2 with ec2 profile gitlab-runner-age
                 }
             }
         },
+```        
         
