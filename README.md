@@ -7,7 +7,7 @@
 
 
 for iam-policy
-ec2 gitlat runner manager only can delete EC2 with ec2 profile gitlab-runner-agent
+ec2 gitlat runner manager only can delete EC2 with ec2 profile `gitlab-runner-agent`
  ```
  {
             "Action": [
